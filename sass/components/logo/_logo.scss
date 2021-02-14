@@ -2,8 +2,11 @@
 
 .logo-dark {
   @extend %logo;
-  color: $sub-text-color;
-  margin-right: 93px;
+
+  .header & {
+    color: $sub-text-color;
+    margin-right: 93px;
+  }
 }
 
 .logo-light {

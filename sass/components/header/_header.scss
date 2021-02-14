@@ -9,10 +9,12 @@
   z-index: 1;
 
   background-color: $primary-bcg-color;
-  @include bordered(#ececec);
+  @include bottom-bordered(#ececec);
+}
 
-  & container {
-    display: flex;
-    align-items: center;
-  }
+.header-container {
+  display: flex;
+  align-items: center;
+
+  @extend %container;
 }
