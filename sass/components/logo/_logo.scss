@@ -2,16 +2,16 @@
 
 .logo-dark {
   @extend %logo;
-  color: var(--sub-text-color);
+  color: $sub-text-color;
   margin-right: 93px;
 }
 
 .logo-light {
   @extend %logo;
-  color: var(--primary-text-color-darkbcg);
+  color: $primary-text-color-darkbcg;
 }
 
 .logo-accent {
   @extend %logo;
-  color: var(--accent-color);
+  color: $accent-color;
 }

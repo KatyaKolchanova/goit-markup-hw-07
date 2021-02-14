@@ -4,7 +4,7 @@
   margin-right: 93px;
 }
 
-.link-thumb {
+.footer-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -28,5 +28,5 @@
 }
 
 .link-icon {
-  fill: currentColor;
+  fill: $primary-bcg-color;
 }
