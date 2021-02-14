@@ -4,7 +4,7 @@
   border-radius: $edge;
 }
 
-@mixin bordered($width: 1px, $type: solid, $color) {
+@mixin bordered($color, $width: 1px, $type: solid) {
   border: $width $type $color;
   border-bottom: $width $type $color;
 }

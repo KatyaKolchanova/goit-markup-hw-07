@@ -1,7 +1,9 @@
 @import "utils/variables";
 @import "base/defaults";
+@import "utils/placeholders";
 @import "utils/mixins";
 @import "base/common";
 @import "components/modal/backdrop";
 @import "components/modal/modal-container";
 @import "components/modal/modal-form";
+@import "components/logo";
