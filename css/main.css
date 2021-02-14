@@ -27,6 +27,14 @@ p {
   text-decoration: none;
 }
 
+.links, .contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 /* Общая стилизация*/
 .container {
   width: 1200px;
@@ -307,8 +315,8 @@ img {
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  border: #212121 solid 2px;
-  border-bottom: #212121 solid 2px;
+  border: 2px solid #212121;
+  border-bottom: 2px solid #212121;
   border-radius: 2px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -374,5 +382,98 @@ img {
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+/* Стилизация хедера */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.header container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-list item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.links {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.links:hover, .links:focus {
+  color: #2196f3;
+}
+
+.link-current {
+  position: relative;
+  color: #2196f3;
+}
+
+.link-current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #2196f3;
+}
+
+.email-link {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts:hover, .contacts:focus {
+  color: #2196f3;
+}
+
+.link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon:hover, .link-icon:focus {
+  fill: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

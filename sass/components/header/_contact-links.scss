@@ -1,0 +1,33 @@
+.email-link {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  @extend %links;
+
+  color: $primary-text-color;
+  text-decoration: none;
+
+  @include transitioned(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  @include transitioned(fill);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
