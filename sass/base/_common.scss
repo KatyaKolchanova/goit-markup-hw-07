@@ -41,3 +41,12 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Стилизация заголовков на странице */
+.section-title {
+  color: var(--sub-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
