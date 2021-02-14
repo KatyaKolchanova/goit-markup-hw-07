@@ -1,0 +1,16 @@
+// Миксины геометрии элементов
+
+@mixin rounded($edge: 4px) {
+  border-radius: $edge;
+}
+
+@mixin bordered($width: 1px, $type: solid, $color) {
+  border: $width $type $color;
+  border-bottom: $width $type $color;
+}
+
+// Миксины анимации
+
+@mixin transitioned($type) {
+  transition: $type $action-duration $action-timing-function;
+}
