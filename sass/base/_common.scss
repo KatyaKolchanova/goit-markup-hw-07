@@ -45,7 +45,7 @@ img {
 
 /* Стилизация заголовков на странице */
 .section-title {
-  color: var(--sub-text-color);
+  color: $sub-text-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;

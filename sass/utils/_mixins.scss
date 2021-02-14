@@ -6,6 +6,9 @@
 
 @mixin bordered($color, $width: 1px, $type: solid) {
   border: $width $type $color;
+}
+
+@mixin bottom-bordered($color, $width: 1px, $type: solid) {
   border-bottom: $width $type $color;
 }
 
