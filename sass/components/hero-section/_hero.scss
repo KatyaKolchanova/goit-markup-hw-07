@@ -63,16 +63,6 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color-button-hover);
+    background-color: $accent-color-button-hover;
   }
 }
-
-// .hero .button:hover,
-// .hero .button:focus
-
-// .hero .button {
-//   background-color: var(--accent-color);
-
-//   transition: background-color var(--action-duration)
-//     var(--action-timing-function);
-// }

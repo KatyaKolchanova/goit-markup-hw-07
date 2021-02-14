@@ -465,7 +465,7 @@ img {
 }
 
 .button:hover, .button:focus {
-  background-color: var(--accent-color-button-hover);
+  background-color: #188ce8;
 }
 
 /* Стилизация секции с преимуществами */
