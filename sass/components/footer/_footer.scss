@@ -6,7 +6,11 @@
   color: $primary-text-color-darkbcg;
 }
 
-.footer-heading {
+.footer-container {
+  @extend %container;
+}
+
+.heading {
   display: flex;
   align-items: baseline;
   margin-bottom: 20px;

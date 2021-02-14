@@ -44,11 +44,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.subscribe-button {
+.subscribe.button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
+  padding: 0;
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -68,7 +69,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-color-button-hover);
+    background-color: $accent-color-button-hover;
   }
 }
 
@@ -77,13 +78,3 @@
 
   fill: currentColor;
 }
-
-// .subscribe.button:hover,
-// .subscribe.button:focus
-
-// .subscribe.button {
-//   background-color: var(--accent-color);
-
-//   transition: background-color var(--action-duration)
-//     var(--action-timing-function);
-// }

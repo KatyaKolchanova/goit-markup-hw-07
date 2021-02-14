@@ -1,40 +1,46 @@
-/* Стилизация секции со списком клиентов */
+// /* Стилизация секции со списком клиентов */
 
-.section-clients {
-  padding: 94px 0;
-}
+// .section-clients {
+//   padding: 94px 0;
+// }
 
-.clients.list {
-  display: flex;
-}
+// .container {
+//   @extend %container;
+// }
 
-.item:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients-list {
+//   display: flex;
+// }
 
-.link-thumb {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  @include bordered($primary-icon-fill);
-  @include rounded(4px);
-  background-color: $primary-bcg-color;
-  color: $primary-icon-fill;
+// // .list-item {
+// //   &:not(:last-child) {
+// //     margin-right: 30px;
+// //   }
+// // }
 
-  @include transitioned(background-color);
-  @include transitioned(color);
-  @include transitioned(border);
+// .link-thumb {
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 90px;
+//   @include bordered($primary-icon-fill);
+//   @include rounded(4px);
+//   background-color: $primary-bcg-color;
+//   color: $primary-icon-fill;
 
-  &:hover,
-  &:focus {
-    background-color: $primary-bcg-color;
-    color: $accent-color;
-    @include bordered($accent-color);
-  }
-}
+//   @include transitioned(background-color);
+//   @include transitioned(color);
+//   @include transitioned(border);
 
-.clients .link-icon {
-  fill: currentColor;
-}
+//   &:hover,
+//   &:focus {
+//     background-color: $primary-bcg-color;
+//     color: $accent-color;
+//     @include bordered($accent-color);
+//   }
+// }
+
+// .clients .link-icon {
+//   fill: currentColor;
+// }

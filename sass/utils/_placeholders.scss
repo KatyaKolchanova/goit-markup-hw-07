@@ -1,3 +1,23 @@
+// Плейсхолдер для контейнера
+%container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// Плейсхолдер для кнопок {
+// %button {
+//   display: inline-block;
+//   @include rounded;
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   min-width: 73px;
+//   cursor: pointer;
+// }
+
 // Плейсхолдер для лого
 
 %logo {
