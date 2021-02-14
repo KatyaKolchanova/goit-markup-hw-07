@@ -10,7 +10,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/main.min.css">
   </head>
   
 	<body>
@@ -368,45 +368,49 @@
 
 			<!--Модальное окно-->
 			<div class="backdrop  is-hidden" data-modal>
-				<div class="modal">
+				<div class="modal-container">
 					<div class="modal-form">
 						<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-						<form name="request-form" autocomplete="on" novalidate class="request-form">
+						<form class="request-form" name="request-form" autocomplete="on" novalidate>
 							<div class="request-field">
-								<label for="user-name" class="request-label">Имя</label>
-								<input type="user-name" name="user-name" id="user-name" autofocus class="request-input" />
+								<label class="request-label" for="user-name" >Имя</label>
+								<input class="request-input" type="user-name" name="user-name" id="user-name" autofocus />
 									<svg class="request-icon" width="18px" height="18px">
 										<use href="./images/sprite.svg#icon-person-black-18dp"></use>
 									</svg>
 							</div>
 							<div class="request-field">
-								<label for="phone-number" class="request-label">Телефон</label>
-								<input type="tel" name="phone-number" id="phone-number" class="request-input" />
+								<label class="request-label" for="phone-number">Телефон</label>
+								<input class="request-input" type="tel" name="phone-number" id="phone-number" />
 								<svg class="request-icon" width="18px" height="18px">
 									<use href="./images/sprite.svg#icon-phone-black-18dp"></use>
 								</svg>
 							</div>
 							<div class="request-field">
-								<label for="email" class="request-label">Почта</label>
-								<input type="email" name="email" id="email" class="request-input" />
+								<label class="request-label" for="email">Почта</label>
+								<input class="request-input" type="email" name="email" id="email" />
 								<svg class="request-icon" width="18px" height="18px">
 									<use href="./images/sprite.svg#icon-email-black-18dp"></use>
 								</svg>
 							</div>
 							<div class="request-field comment">
-								<label for="comment" class="request-label">Комментарий</label>
-								<textarea name="comment" id="comment" placeholder="Введите текст" class="request-input comment" autocomplete="off"></textarea>
+								<label class="request-label" for="comment">Комментарий</label>
+								<textarea class="request-input comment" name="comment" id="comment" placeholder="Введите текст" autocomplete="off"></textarea>
 							</div>
-							<div class="request-field checkmark">
-								<input type="checkbox" name="checkbox" id="checkbox" class="visually-hidden checkbox" />
-								<label for="checkbox" class="checkbox-label"><span class="checkbox-content">Соглашаюсь с рассылкой и принимаю <a href="#" class="link-terms">Условия договора</a></span></label>
+							<div class="field-checkmark">
+								<input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
+								<label class="checkbox-label" for="checkbox">
+									<span class="checkbox-content">Соглашаюсь с рассылкой и принимаю
+										<a class="link-terms" href="#">Условия договора</a>
+									</span>
+								</label>
 							</div>
-							<button type="submit" class="request-button">
+							<button class="request-send" type="submit">
 								Отправить
 							</button>
 						</form>
 					</div>
-					<button class="modal-action" data-modal-close>
+					<button class="modal-close" data-modal-close>
 						<svg class="close-icon" width="11px" height="11px">
 							<use href="./images/sprite.svg#icon-modal-close-sign"></use>
 						</svg>
