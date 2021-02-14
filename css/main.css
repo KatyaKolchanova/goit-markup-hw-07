@@ -20,7 +20,7 @@ p {
   margin: 0;
 }
 
-.clients-container, .footer-container {
+.team-container, .clients-container, .footer-container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -536,7 +536,7 @@ img {
 }
 
 /* Стилизация секции с командой */
-.team {
+.team.section {
   background-color: #f5f4fa;
 }
 
@@ -548,14 +548,14 @@ img {
   line-height: 1.19;
 }
 
-.item {
+.team-item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
-.item:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -565,17 +565,17 @@ img {
   text-align: center;
 }
 
-.title {
+.employee-title {
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
 }
 
-.job {
+.employee-job {
   margin-bottom: 16px;
 }
 
-.social-links {
+.team-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +585,7 @@ img {
   padding: 0 32px;
 }
 
-.link-thumb {
+.team-thumb {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -605,12 +605,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-thumb:hover, .link-thumb:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-bcg-color);
+.team-thumb:hover, .team-thumb:focus {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
-.link-icon {
+.team-icon {
   fill: currentColor;
 }
 
