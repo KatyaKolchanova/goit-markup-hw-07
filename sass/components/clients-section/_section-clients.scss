@@ -1,46 +1,46 @@
-// /* Стилизация секции со списком клиентов */
+/* Стилизация секции со списком клиентов */
 
-// .section-clients {
-//   padding: 94px 0;
-// }
+.section-clients {
+  padding: 94px 0;
+}
 
-// .container {
-//   @extend %container;
-// }
+.clients-container {
+  @extend %container;
+}
 
-// .clients-list {
-//   display: flex;
-// }
+.clients-list {
+  display: flex;
+}
 
-// // .list-item {
-// //   &:not(:last-child) {
-// //     margin-right: 30px;
-// //   }
-// // }
+.client-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
-// .link-thumb {
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 170px;
-//   height: 90px;
-//   @include bordered($primary-icon-fill);
-//   @include rounded(4px);
-//   background-color: $primary-bcg-color;
-//   color: $primary-icon-fill;
+.client-thumb {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  @include bordered($primary-icon-fill);
+  @include rounded(4px);
+  background-color: $primary-bcg-color;
+  color: $primary-icon-fill;
 
-//   @include transitioned(background-color);
-//   @include transitioned(color);
-//   @include transitioned(border);
+  @include transitioned(background-color);
+  @include transitioned(color);
+  @include transitioned(border);
 
-//   &:hover,
-//   &:focus {
-//     background-color: $primary-bcg-color;
-//     color: $accent-color;
-//     @include bordered($accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    background-color: $primary-bcg-color;
+    color: $accent-color;
+    @include bordered($accent-color);
+  }
+}
 
-// .clients .link-icon {
-//   fill: currentColor;
-// }
+.client-icon {
+  fill: currentColor;
+}
